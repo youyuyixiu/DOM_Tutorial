@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <style>
+        button {
+            background-color: #b10;
+        }
+    </style> -->
+    <!-- <script src="main.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div>
+        <button>Yo.</button>
+    </div> -->
+    <div>
+        <button id="message-trigger">Yo</button>
+        <div id="message" hidden>好多好多通知...</div>
+    </div>
+    <script>
+        // var button = document.createElement('button');
+        // button.innerText = 'Yo';
+        // button.style.background = '#a10';
+        // document.body.appendChild(button);
+
+        var button = document.getElementById('message-trigger');
+        var message = document.getElementById('message');
+        button.addEventListener('click',function() {
+            message.hidden = false;
+        })
+    </script>
+</body>
+
+</html>
